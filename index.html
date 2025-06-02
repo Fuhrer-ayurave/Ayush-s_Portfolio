@@ -1,38 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ayush's Portfolio</title>
-    <style>
-  body {
-    background-image: url('https://images.unsplash.com/photo-1634390252804-ecf9ad725205?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    color: white; /* Makes text white for visibility */
-    font-family: Arial, sans-serif;
-  }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ayush's Portfolio</title>
+  <style>
+    body {
+      background-image: url('https://images.unsplash.com/photo-1634390252804-ecf9ad725205?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: white;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
 
-  section, pre, ul, b, h1 {
-    background: rgba(0, 0, 0, 0.6); /* Transparent dark background behind text */
-    padding: 20px;
-    border-radius: 12px;
-    margin: 20px;
-  }
+    section,
+    pre,
+    ul,
+    b,
+    h1 {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      border-radius: 12px;
+      margin: 20px;
+    }
 
-  img {
-    border-radius: 20px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-    margin: 20px;
-  }
-</style>
+    /* Image styling and float */
+    .float-image {
+      float: right;
+      width: 400px;
+      margin: 20px;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease;
+    }
 
+    /* Hover zoom effect */
+    .float-image:hover {
+      transform: scale(1.05);
+    }
+
+    /* Responsive: On tablets and smaller, remove float and center images */
+    @media (max-width: 991px) {
+      .float-image {
+        float: none;
+        display: block;
+        width: 100%;
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  </style>
 </head>
 <body>
-
-<h1>Home</h1>
-<pre> 
+  <h1>Home</h1>
+  <pre>
     <b>
          Hi, I’m AR – Ayush Roy 
     </b>
@@ -44,33 +69,25 @@ Welcome to my digital space.
 “Driven by ambition, built by curiosity."
 </q>
 
-</pre>
-<img 
-src="https://bsmedia.business-standard.com/_media/bs/img/article/2024-09/29/full/1727598515-5448.jpg?im=FeatureCrop,size=(826,465)"
-width="400px"
-align="right"
-style="border-radius: 20px; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); margin: 20px;" 
-onmouseover="this.style.transform='scale(1.05)'" 
-onmouseout="this.style.transform='scale(1)'" 
-alt="Tech"/>
+  </pre>
 
-<img 
-src="https://news.ufl.edu/media/newsufledu/images/2024/02/crypto-wide-ersized.jpg" 
-width = "400px" 
-align = "right"
-style="border-radius: 20px; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); margin: 20px;" 
-onmouseover="this.style.transform='scale(1.05)'" 
-onmouseout="this.style.transform='scale(1)'" 
-alt="Cryptocurrency"/>
+  <img
+    src="https://bsmedia.business-standard.com/_media/bs/img/article/2024-09/29/full/1727598515-5448.jpg?im=FeatureCrop,size=(826,465)"
+    alt="Tech"
+    class="float-image"
+  />
 
-<section>
-<h1> 
+  <img
+    src="https://news.ufl.edu/media/newsufledu/images/2024/02/crypto-wide-ersized.jpg"
+    alt="Cryptocurrency"
+    class="float-image"
+  />
 
-About Me
+  <section>
+    <h1>About Me</h1>
+  </section>
 
-</h1>
-</section>
-<pre>
+  <pre>
 I’m AR (aka Ayush Roy), a 14-year-old student with a passion for technology, science, and entrepreneurship. 
 I’m currently in Class 9, exploring everything from Physics to Psychology, and actively building skills that 
 align with my dream of becoming a multi-billionaire founder.
@@ -79,91 +96,63 @@ My goals aren’t ordinary.
 I aim to revolutionize systems through tech — 
 whether it’s developing a blockchain judiciary alternative or mastering full-stack development to launch 
 powerful digital tools.
-</pre>
+  </pre>
 
-<section>
-    <h1>🧠 Fields I’m passionate about:
-    </h1>
-</section>
-
-   <ul>
-    <li>Computer Science & Artificial Intelligence</li>
-
-    <li>Physics, Chemistry, Biology & Psychology</li>
-
-    <li>Economics, Strategy, and Game Theory</li>
-
-    <li>Blockchain & Cryptocurrency</li>
-   </ul>
-
-<section>
-    <h1>
-    🛠️ Skills I’m building:
-    </h1>
-</section>
-
-   <ul> 
-    <li>HTML, CSS, JS (Frontend Web Dev)</li>
-
-    <li>Video Editing (CapCut, DaVinci Resolve)</li>
-
-    <li>YouTube Content Creation</li>
-
-    <li>Startup Ideation & Strategy</li>
-
-    <li>Mindset Training through the “Dark Scholar Billionaire” framework</li>
-   </ul>
-
-<section>
-    <h1>
-Books I am/will be reading during this summer vacation are - 
-    </h1>
-</section>
-
-<ul>
-<li>The Power Of Your Subconscious Mind</li>
-<li>The Richest Man In Babylon</li>
-<li>Think And Grow Rich</li>
-</ul>
-
-<b>
-Reading isn't just a habit — it's how I weaponize my mind.
-</b>
-
-<section>
-    <h1> 
-🎯 Goals 
-    </h1>
-</section>
-<b>Short-Term (1–2 years):</b>
-<ul>
-
-   <li>Master web development (HTML, CSS, JS)</li>
-
-   <li>Grow my YouTube channel with regular content</li>
-
-   <li>Score top marks in Class 9 & 10 CBSE </li>
-
-   <li>Get deep into entrepreneurial reading & power psychology</li>
-</ul>
-
-<b>
-Long-Term (5–10 years):
-</b>
+  <section>
+    <h1>🧠 Fields I’m passionate about:</h1>
+  </section>
 
   <ul>
+    <li>Computer Science & Artificial Intelligence</li>
+    <li>Physics, Chemistry, Biology & Psychology</li>
+    <li>Economics, Strategy, and Game Theory</li>
+    <li>Blockchain & Cryptocurrency</li>
+  </ul>
+
+  <section>
+    <h1>🛠️ Skills I’m building:</h1>
+  </section>
+
+  <ul>
+    <li>HTML, CSS, JS (Frontend Web Dev)</li>
+    <li>Video Editing (CapCut, DaVinci Resolve)</li>
+    <li>YouTube Content Creation</li>
+    <li>Startup Ideation & Strategy</li>
+    <li>Mindset Training through the “Dark Scholar Billionaire” framework</li>
+  </ul>
+
+  <section>
+    <h1>Books I am/will be reading during this summer vacation are - </h1>
+  </section>
+
+  <ul>
+    <li>The Power Of Your Subconscious Mind</li>
+    <li>The Richest Man In Babylon</li>
+    <li>Think And Grow Rich</li>
+  </ul>
+
+  <b>Reading isn't just a habit — it's how I weaponize my mind.</b>
+
+  <section>
+    <h1>🎯 Goals</h1>
+  </section>
+
+  <b>Short-Term (1–2 years):</b>
+  <ul>
+    <li>Master web development (HTML, CSS, JS)</li>
+    <li>Grow my YouTube channel with regular content</li>
+    <li>Score top marks in Class 9 & 10 CBSE</li>
+    <li>Get deep into entrepreneurial reading & power psychology</li>
+  </ul>
+
+  <b>Long-Term (5–10 years):</b>
+  <ul>
     <li>Crack IIT with a CSE major</li>
-
     <li>Launch multiple tech startups</li>
-
     <li>Build and own (majority) a billion-dollar company</li>
-
     <li>Create a startup ecosystem for young innovators</li>
-
-    <li>Build my blockchain judiciary MVP</li> 
-
+    <li>Build my blockchain judiciary MVP</li>
     <li>Develop solutions that impact lives at scale</li>
-</ul>
-
+  </ul>
 </body>
 </html>
