@@ -27,30 +27,30 @@
       margin: 20px;
     }
 
-    /* Image styling and float */
-    .float-image {
-      float: right;
-      width: 400px;
+    /* Image container using flexbox */
+    .image-row {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
       margin: 20px;
+    }
+
+    .float-image {
+      width: 400px;
       border-radius: 20px;
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
       transition: transform 0.3s ease;
     }
 
-    /* Hover zoom effect */
     .float-image:hover {
       transform: scale(1.05);
     }
 
-    /* Responsive: On tablets and smaller, remove float and center images */
     @media (max-width: 991px) {
       .float-image {
-        float: none;
-        display: block;
         width: 100%;
         max-width: 400px;
-        margin-left: auto;
-        margin-right: auto;
       }
     }
   </style>
@@ -68,20 +68,22 @@ Welcome to my digital space.
 <q>
 “Driven by ambition, built by curiosity."
 </q>
-
   </pre>
 
-  <img
-    src="https://bsmedia.business-standard.com/_media/bs/img/article/2024-09/29/full/1727598515-5448.jpg?im=FeatureCrop,size=(826,465)"
-    alt="Tech"
-    class="float-image"
-  />
+  <!-- Images inside Flexbox container -->
+  <div class="image-row">
+    <img
+      src="https://bsmedia.business-standard.com/_media/bs/img/article/2024-09/29/full/1727598515-5448.jpg?im=FeatureCrop,size=(826,465)"
+      alt="Tech"
+      class="float-image"
+    />
 
-  <img
-    src="https://news.ufl.edu/media/newsufledu/images/2024/02/crypto-wide-ersized.jpg"
-    alt="Cryptocurrency"
-    class="float-image"
-  />
+    <img
+      src="https://news.ufl.edu/media/newsufledu/images/2024/02/crypto-wide-ersized.jpg"
+      alt="Cryptocurrency"
+      class="float-image"
+    />
+  </div>
 
   <section>
     <h1>About Me</h1>
